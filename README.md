@@ -75,7 +75,6 @@ cd merci-media
 Exécuter le script :
 
 ```bash
-chmod +x setup.sh
 ./setup.sh
 ```
 
