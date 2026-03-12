@@ -1,0 +1,22 @@
+# ── Étape 1 : Build React ────────────────────────────────────────────────────
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --silent
+COPY . .
+RUN npm run build
+# Le dossier dist/ contient le site statique
+
+# ── Étape 2 : Nginx qui sert le build ───────────────────────────────────────
+FROM nginx:alpine
+
+# Supprimer la config nginx par défaut
+RUN rm /etc/nginx/conf.d/default.conf
+
+# Copier le build React dans le dossier servi par nginx
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+EXPOSE 80 443
+
+CMD ["nginx", "-g", "daemon off;"]

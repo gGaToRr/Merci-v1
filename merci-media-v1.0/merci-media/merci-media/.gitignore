@@ -1,0 +1,37 @@
+# Données et secrets
+.env
+data/
+downloads/
+*.db
+*.sqlite
+
+# Dépendances
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Films (trop lourds)
+movies/
+*.mp4
+*.mkv
+*.avi
+*.mov
