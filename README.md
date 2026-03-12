@@ -8,7 +8,7 @@ Une application web personnelle **tout-en-un pour gérer vos médias** : musique
 
 ---
 
-# ✨ Fonctionnalités
+# Fonctionnalités
 
 * 🎵 **Deezer** — Recherche et téléchargement de musique (MP3 / FLAC)
 * 🎬 **Films & Séries** — Catalogue basé sur TMDB
@@ -20,7 +20,7 @@ Une application web personnelle **tout-en-un pour gérer vos médias** : musique
 
 ---
 
-# 🚀 Installation
+# Installation
 
 ## Prérequis
 
@@ -32,7 +32,7 @@ Avant de commencer :
 
 ---
 
-# ▶️ Exécution
+# Exécution
 
 ## 1️⃣ Créer un compte Deezer
 
@@ -100,7 +100,7 @@ http://localhost:8080
 
 ---
 
-# ⚙️ Configuration manuelle (optionnel)
+# Configuration manuelle (optionnel)
 
 ```bash
 cp .env.example .env
@@ -158,7 +158,7 @@ docker compose up --build -d
 
 ---
 
-# 🏗️ Stack technique
+# Stack technique
 
 | Composant      | Technologie       |
 | -------------- | ----------------- |
@@ -181,4 +181,4 @@ Utilisez ce projet uniquement pour vos contenus personnels ou libres de droits.
 
 # 📄 Licence
 
-MIT
+Made with love by @KAETS0NER @pierre.untersinger
